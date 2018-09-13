@@ -20,8 +20,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#898989', end
   max-width: none !important;
 }*/
 .main-container > .row {
-  height: 100vh;
+  /*height: 100vh;*/
   padding-bottom: 52px;
+}
+@media (min-width: 768px) {
+  .main-container > .row {
+    height: 100vh;
+  }
 }
 .title-img,
 .kindle-example {

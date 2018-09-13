@@ -1,6 +1,108 @@
 body {
-  background: #000;
+background: rgb(137,137,137);
+background: -moz-linear-gradient(-45deg, rgba(137,137,137,1) 0%, rgba(56,56,56,1) 100%);
+background: -webkit-linear-gradient(-45deg, rgba(137,137,137,1) 0%,rgba(56,56,56,1) 100%);
+background: linear-gradient(135deg, rgba(137,137,137,1) 0%,rgba(56,56,56,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#898989', endColorstr='#383838',GradientType=1 );
+  /*max-height: 100vh;*/
 }
-h1 {
+
+@media (min-width: 768px) {
+  body {
+    max-height: 100vh;
+  }
+}
+
+#cover {
+  background: rgba(0,0,0,.35);
+}
+/*.main-container {
+  max-width: none !important;
+}*/
+.main-container > .row {
+  height: 100vh;
+  padding-bottom: 52px;
+}
+.title-img,
+.kindle-example {
+  display: inline-block;
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+}
+.kindle-example {
+  max-width: 350px;
+}
+.coming-soon,
+.fancy {
   color: #FFF;
+  font-family: 'Lato', sans-serif;
+  /*text-transform: uppercase;*/
+  margin: 20px 0 0 0;
+  font-size: 36px;
+  letter-spacing: 3px;
+  line-height: 1.2;
+}
+.fancy {
+  margin-top: 20px;
+  font-family: 'Times New Roman', Times, serif;
+  line-height: 1;
+  -webkit-transform:scale(6,1); /* Safari and Chrome */
+    -moz-transform:scale(6,1); /* Firefox */
+    -ms-transform:scale(6,1); /* IE 9 */
+    -o-transform:scale(6,1); /* Opera */
+    transform:scale(6,1);
+}
+.coming-soon {
+  margin-top: 3px;
+}
+/*h1 {
+  color: #ffeb7e;
+}
+.title-ls {
+  text-align: center;
+  line-height: 1;
+  font-family: 'Times New Roman', Times, serif;
+  font-style: italic;
+  font-weight: 500;
+  display: relative;
+  transform: rotate(-11.25deg);
+  font-size: 73px;
+  text-shadow: 3px 3px 0 #000;
+  margin-top: -52px;
+}
+.title-ls:after {
+  content: ':';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.title-li {
+  font-family: 'Lato', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  line-height: 1;
+  font-size: 100px;
+  text-align: center;
+ /* margin-top: 52px;*/
+  text-shadow: 4px 4px 0 #000;
+}
+.title-li span {
+  font-size: 132px;
+}*/
+
+@media only screen and (max-width: 670px) {
+    .title-ls,
+    .title-li {
+      text-shadow: 2px 2px 0 #000;
+    }
+    .title-ls {
+      font-size: 54.75px;
+    }
+    .title-li span {
+      font-size: 101px;
+    }
+    .title-li {
+      font-size: 75px;
+    }
 }

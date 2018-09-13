@@ -1,3 +1,8 @@
+html,
+body {
+	overflow-x: hidden;
+}
+
 body {
 background: rgb(137,137,137);
 background: -moz-linear-gradient(-45deg, rgba(137,137,137,1) 0%, rgba(56,56,56,1) 100%);
@@ -5,7 +10,6 @@ background: -webkit-linear-gradient(-45deg, rgba(137,137,137,1) 0%,rgba(56,56,56
 background: linear-gradient(135deg, rgba(137,137,137,1) 0%,rgba(56,56,56,1) 100%);
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#898989', endColorstr='#383838',GradientType=1 );
   /*max-height: 100vh;*/
-overflow-x: hidden;
 }
 
 @media (min-width: 768px) {

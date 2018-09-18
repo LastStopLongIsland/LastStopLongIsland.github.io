@@ -113,3 +113,16 @@ content: '';
       font-size: 75px;
     }
 }
+
+.btn-primary.btn-amazon {
+  color: #FFF !important;
+  background: #ff9900;
+  border-color: #c17400;
+  font-size: 28px;
+  padding: 12px 25px;
+  font-family: 'Lato', sans-serif;
+  letter-spacing: 2px;
+}
+.btn-primary.btn-amazon:hover {
+  background: #c17400;
+}

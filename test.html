@@ -20,6 +20,11 @@
 
 <body>
 
+  <div id="nav-mobile-backdrop">
+    <div style="pointer-events: none;">&nbsp;</div>
+    <a class="text-center"><img src="img/mobile-alternate-logo.png"></a>
+    <div class="text-right"><a class="btn btn-small-amazon" href="http://a.co/d/e8XCdDu" target="_blank">Buy Now &raquo;</a></div>
+  </div>
   <div id="nav-button">
     <span></span>
     <span></span>
@@ -29,10 +34,12 @@
 
   <div id="shade" style="display: none;"></div>
   <div id="nav">
-    <div class="d-flex align-items-center">
-    <ul>
-      <li>Test</li>
-      <li>Test</li>
+    <div class="d-flex align-items-center justify-content-center">
+    <ul class="m-0 p-0 text-center">
+      <li><a href="#intro"><div><div>Back to Top</div></div></a></li>
+      <li><a href="#about"><div><div>About The Book</div></div></a></li>
+      <li><a href="#author"><div><div>About the Author</div></div></a></li>
+      <li><a href="#newsletter"><div><div>Newsletter</div></div></a></li>
     </ul>
     </div>
   </div>
@@ -53,11 +60,13 @@
     </div>
 	<div id="about" class="parallax-window">
 		<div class="container">
-			<div class="row align-items-center justify-content-center p-0 py-md-5">
+			<div class="row align-items-center justify-content-center py-sm-5">
 				<div class="col px-4 py-5 p-sm-5 white-box">
 					<h2 class="mb-4">About the Book</h2>
-					<p class="intro-paragraph"><strong>Last Stop: Long Island</strong> is a semi autobiographical tale recounting the lives of a established commuter from Long Island, New York, and his supportive wife. The book is a 25 year historical, inspirational, yet, humorous romp.</p>
-					<p>After first spending years working as hotshot bartender in Long Island’s premium clubs (where celebrity sightings were the norm and sleep depravity common), the author is reintroduced to the love of his life, his future wife Linda. Marriage and two children soon follow. Desperate to settle down, the author first tries his hand at selling door-to-door life insurance. When that fails, and through the intervention of a good friend, the author finds himself in a job in the insurance industry that 99.9% of the world didn’t know existed. Now a regular commuter on the Long Island Railroad traveling into New York City, he soon find out that in this impudent world of insurance, cutthroat tactics by high six figure salespeople was routine and undermining the competition a daily sport.</p>
+					<!-- <p class="intro-paragraph"> -->
+          <p>Who knew that a crappy day at work would eventually turn into a novel. Well, that's exactly what happened to the author of <strong>Last Stop: Long Island</strong>. In the summer of of 2008, Greg Costa, and a couple of his work buddies, were blowing off steam at the Palm West Side off 8th Avenue in Manhattan. After several rounds of drinks, their crappy day got better. However, it was Greg's storytelling about his career that had both of his friends hysterically laughing. This led to one of them urging Greg to write a book. And, on that same night, he decided to do just that... and, on the train, no less.</p>
+          <p><strong>Last Stop: Long Island</strong> took nine years to complete. It's a personal tale of love, hope, perseverance, resurgence and fulfillment, or, whatever else you can pull from it. The story recounts the life of an established commuter from Long Island, New York, and his supportive wife, Linda The book is a 25 year historical, inspirational, yet, humorous romp. It follows Greg's career as a bartender in a couple of Long Island's top nightclubs, to his eventual foray into the insurance business. However, Greg's insurance career veers off in a direction that most of the planet didn't know existed. It's a book about someone being thrown into the muck of Corporate America, and coming out on top.</p>
+          <p>With the theme of commuting, and the Long Island Railroad as constant reminders to the fundamentals of this story, the real heart of this book is about Greg and his relationship with his wife. Linda's encouragement during their financial woes, or her urging him in a new direction as she battled cancer, makes her the true hero of this tale. Still, Greg's interaction with a cast of characters as the result of his commute, is the thread that ties the story together. Whether his dealings with these people was good or bad, there was no denying how they shaped his future. So, please, enjoy the ride.</p>
 				</div>
 			</div>
 		</div>
@@ -67,7 +76,7 @@
 			<div class="row align-items-center justify-content-center p-0 py-md-5">
                 	<div class="col-lg-4 text-center d-none d-lg-block">
                 		<div class="photo-wrap p-3">
-                			<img src="img/blank-profile.png">
+                			<img src="img/greg.png">
                 			<p class="mb-0">Greg Costa</p>
                 			<div class="photo-wrap-mask"></div>
                 		</div>
@@ -80,8 +89,8 @@
                 			<div class="photo-wrap-mask"></div>
                 			</div>
                 		</h2>
-                		<p><strong>Greg Costa</strong> is a first time author and a lifelong resident of Long Island, New York. Originally from Hicksville, Greg grew up as part of a large family of ten siblings. He graduated from Fordham University in the Bronx with a B.A. in History. By the late 1970's, Greg's family migrated to the Huntington area, and he eventually moved to Northport with his wife Linda in the early eighties. As of this writing, they remain in Northport. Greg and Linda are the proud parents of two grown children, Sean and Morgan Costa.</p>
-						<p>Today, Greg continues to be a well-known personality in New York's group insurance industry. <strong>Last Stop: Long Island</strong> is the result of the urging of his fellow workers to put his story telling into writing. His second book, an audacious romance novel titled: <strong>Last Stop: Montreal</strong>, will be released in the summer of 2019.</p>
+                		<p><strong>Greg Costa</strong> is a first time author and a lifelong resident of Long Island, New York. Originally from Hicksville, Greg grew up as part of a large family of ten siblings. He graduated from Fordham University in the Bronx with a B.A. in History. By the late 1970's, Greg's family migrated to the Huntington area, and he eventually moved to Northport with his wife Linda in the early eighties, and where they continue to live today. Greg and Linda are the very proud parents of two children, Sean and Morgan Costa.</p>
+                    <p>Today, Greg continues to be a well-known personality in New York's group insurance industry. <strong>Last Stop: Long Island</strong> is the result of the urging of his fellow workers to put his story telling into writing. Greg is passionate about his family, drinking with his friends, and playing golf. His second book, an audacious romance novel still untitled, will be released in the summer of 2019.</p>
             <div id="coffee-cup" data-aos="fade-up" data-aos-duration="0" data-aos-offset="40"></div>
                 	</div>
             </div>
@@ -143,7 +152,75 @@
         $('#shade').fadeToggle();
       });
 
-  	});
+     //  $('#nav li a').hover(function(){
+     //      $(this).parents('#nav').find('li').removeClass('hovered-nav-enlarge');
+     //      $(this).parents('#nav li').addClass('hovered-nav-enlarge');
+     //    }, function(){
+     //      $(this).parents('#nav').find('li').removeClass('hovered-nav-enlarge');
+    	// });
+
+      $('#nav li a').hover(
+        function(){
+          $(this).parents('#nav').find('li').removeClass('hovered-nav-enlarge');
+          $(this).parents('#nav li').addClass('hovered-nav-enlarge');
+        }, function() {
+          $(this).parents('#nav').find('li').removeClass('hovered-nav-enlarge');
+        }
+      );
+
+
+      $(document).on('mouseup', '.nav-activated', function(e) {
+          var button = $('#nav-button');
+          var openNav = $('#nav');
+          var navLink = $('#nav a');
+          if (!button.is(e.target) && button.has(e.target).length === 0) {
+              if (!openNav.is(e.target) && openNav.has(e.target).length === 0) {
+                button.trigger('click');
+              }
+          }
+      });
+
+      $('#nav ul li a').click(function(){
+        $('#nav-button').trigger('click');
+      });
+
+
+
+      
+
+  $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
+        || location.hostname == this.hostname) {
+
+        var target = $(this.hash);
+        var paddingFix = parseInt($('#intro').css('padding-top'), 10);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+           if (target.length) {
+             $('html,body').animate({
+                 scrollTop: target.offset().top - paddingFix
+            }, 1000);
+            return false;
+        }
+    }
+});
+
+
+
+  $(window).scroll(function() {
+        var scroll = $(window).scrollTop(); // how many pixels you've scrolled
+        var os = $('#intro .btn-amazon').offset().top; // pixels to the top of div1
+        var ht = $('#intro .btn-amazon').height(); // height of div1 in pixels
+        // if you've scrolled further than the top of div1 plus it's height
+        // change the color. either by adding a class or setting a css property
+        if(scroll > os + ht){
+            $('body').addClass('small-amazon-enabled');
+        } else {
+          $('body').removeClass('small-amazon-enabled');
+        }
+    });
+
+
+    });
 
     </script>
 </body>

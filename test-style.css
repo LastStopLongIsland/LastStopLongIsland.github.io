@@ -126,6 +126,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
   list-style-type: none;
   width: calc(100% - 154px);
   max-width: 210px;
+  margin-top: -2.5px !important;
 }
 #nav li {
   display: block;

@@ -25,11 +25,14 @@
     <a class="text-center"><img src="img/mobile-alternate-logo.png"></a>
     <!-- <div class="text-right"><a class="btn btn-small-amazon" href="http://a.co/d/e8XCdDu" target="_blank">Buy Now &raquo;</a></div> -->
   </div>
-  <div id="nav-button">
+  <!-- <div id="nav-button">
     <span></span>
     <span></span>
     <span></span>
     <span></span>
+  </div> -->
+  <div id="menu-button">
+    <p class="text-center mb-0">Menu</p>
   </div>
 
   <div id="shade" style="display: none;"></div>
@@ -46,15 +49,23 @@
 
 	<div id="intro">
         <div class="container main-container">
-            <div class="row align-items-center">
-                <div class="col-12 col-md px-4 px-md-3 mt-5 mt-md-0 text-center">
-                    <img class="title-img" src="img/title-img.png" data-aos="fade-in" data-aos-duration="650">
-                    <p class="coming-soon" data-aos="fade-up" data-aos-duration="650" data-aos-delay="600">Purchase the Book Today!</p>
-                  <p data-aos="fade-up" data-aos-duration="650" data-aos-delay="900"><a class="btn btn-primary btn-amazon mt-4" href="http://a.co/d/e8XCdDu" target="_blank">Buy Now</a></p>
-                </div>
-                <div class="col-12 col-md mt-4 mt-md-0 mb-4 mb-md-0 text-center">
+            <div class="row pb-0 align-items-center">
+              <div class="col-12 col-md-5 mt-4 mt-md-0 mb-4 mb-md-0 text-center">
                     <img class="kindle-example" src="img/kindle-example.png" data-aos="fade-left" data-aos-duration="650" data-aos-delay="300">
                 </div>
+                <div class="col-12 col-md-7 py-md-5 px-4 px-md-3 mt-5 mt-md-0 text-center">
+
+                  <p class="text-white text-left lead">Who knew that a crappy day at work would eventually turn into a novel. Well, that's exactly what happened to the author of <strong>Last Stop: Long Island</strong>. In the summer of of 2008, Greg Costa, and a couple of his work buddies, were blowing off steam at the Palm West Side off 8th Avenue in Manhattan. After several rounds of drinks, their crappy day got better. However, it was Greg's storytelling about his career that had both of his friends hysterically laughing. This led to one of them urging Greg to write a book. And, on that same night, he decided to do just that... and, on the train, no less.</p>
+                  <p class="coming-soon mb-4" data-aos="fade-up" data-aos-duration="650" data-aos-delay="600">Buy the Book Today!</p>
+
+                    <!-- <img class="title-img" src="img/title-img.png" data-aos="fade-in" data-aos-duration="650"> -->
+                    <!-- <p class="coming-soon" data-aos="fade-up" data-aos-duration="650" data-aos-delay="600">Purchase the Book Today!</p>
+                  <p data-aos="fade-up" data-aos-duration="650" data-aos-delay="900"><a class="btn btn-primary btn-amazon mt-4" href="http://a.co/d/e8XCdDu" target="_blank">Buy Now</a></p> -->
+                    <p class="text-center mb-0 btn-amazon" data-aos="fade-up" data-aos-duration="650" data-aos-delay="900"><a href="http://a.co/d/e8XCdDu" target="_blank"><img class="amazon-link" src="img/amazon-link.png"></a></p>
+                </div>
+                <!-- <div class="col-12 col-md mt-4 mt-md-0 mb-4 mb-md-0 text-center">
+                    <img class="kindle-example" src="img/kindle-example.png" data-aos="fade-left" data-aos-duration="650" data-aos-delay="300">
+                </div> -->
             </div>
         </div>
     </div>
@@ -64,7 +75,7 @@
 				<div class="col px-4 py-5 p-sm-5 white-box">
 					<h2 class="mb-4">About the Book</h2>
 					<!-- <p class="intro-paragraph"> -->
-          <p>Who knew that a crappy day at work would eventually turn into a novel. Well, that's exactly what happened to the author of <strong>Last Stop: Long Island</strong>. In the summer of of 2008, Greg Costa, and a couple of his work buddies, were blowing off steam at the Palm West Side off 8th Avenue in Manhattan. After several rounds of drinks, their crappy day got better. However, it was Greg's storytelling about his career that had both of his friends hysterically laughing. This led to one of them urging Greg to write a book. And, on that same night, he decided to do just that... and, on the train, no less.</p>
+          <!-- <p>Who knew that a crappy day at work would eventually turn into a novel. Well, that's exactly what happened to the author of <strong>Last Stop: Long Island</strong>. In the summer of of 2008, Greg Costa, and a couple of his work buddies, were blowing off steam at the Palm West Side off 8th Avenue in Manhattan. After several rounds of drinks, their crappy day got better. However, it was Greg's storytelling about his career that had both of his friends hysterically laughing. This led to one of them urging Greg to write a book. And, on that same night, he decided to do just that... and, on the train, no less.</p> -->
           <p><strong>Last Stop: Long Island</strong> took nine years to complete. It's a personal tale of love, hope, perseverance, resurgence and fulfillment, or, whatever else you can pull from it. The story recounts the life of an established commuter from Long Island, New York, and his supportive wife, Linda The book is a 25 year historical, inspirational, yet, humorous romp. It follows Greg's career as a bartender in a couple of Long Island's top nightclubs, to his eventual foray into the insurance business. However, Greg's insurance career veers off in a direction that most of the planet didn't know existed. It's a book about someone being thrown into the muck of Corporate America, and coming out on top.</p>
           <p>With the theme of commuting, and the Long Island Railroad as constant reminders to the fundamentals of this story, the real heart of this book is about Greg and his relationship with his wife. Linda's encouragement during their financial woes, or her urging him in a new direction as she battled cancer, makes her the true hero of this tale. Still, Greg's interaction with a cast of characters as the result of his commute, is the thread that ties the story together. Whether his dealings with these people was good or bad, there was no denying how they shaped his future. So, please, enjoy the ride.</p>
 				</div>
@@ -152,7 +163,7 @@
         var aboutTop = $('#about').offset().top;
         var authorTop = $('#author').offset().top;
         var newsletterTop = $('#newsletter').offset().top
-        var nav = $('#nav-button');
+        var nav = $('#menu-button');
         var navOffset = nav.height() + parseInt(nav.css('top'));
         var currentScroll = $(window).scrollTop();
         // console.log('current scroll ' + currentScroll + '   newsletterTop ' + newsletterTop);
@@ -167,7 +178,7 @@
         navButtonLight();
       });
 
-      $('#nav-button').click(function(){
+      $('#menu-button').click(function(){
         $('body').toggleClass('nav-activated');
         $('#shade').fadeToggle();
       });
@@ -190,7 +201,7 @@
 
 
       $(document).on('mouseup', '.nav-activated', function(e) {
-          var button = $('#nav-button');
+          var button = $('#menu-button');
           var openNav = $('#nav');
           var navLink = $('#nav a');
           if (!button.is(e.target) && button.has(e.target).length === 0) {
@@ -201,7 +212,7 @@
       });
 
       $('#nav ul li a').click(function(){
-        $('#nav-button').trigger('click');
+        $('#menu-button').trigger('click');
       });
 
 

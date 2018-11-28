@@ -1,0 +1,128 @@
+html,
+body {
+  overflow-x: hidden;
+}
+
+body {
+background: rgb(137,137,137);
+background: -moz-linear-gradient(-45deg, rgba(137,137,137,1) 0%, rgba(56,56,56,1) 100%);
+background: -webkit-linear-gradient(-45deg, rgba(137,137,137,1) 0%,rgba(56,56,56,1) 100%);
+background: linear-gradient(135deg, rgba(137,137,137,1) 0%,rgba(56,56,56,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#898989', endColorstr='#383838',GradientType=1 );
+  /*max-height: 100vh;*/
+}
+
+@media (min-width: 768px) {
+  body {
+    max-height: 100vh;
+  }
+}
+
+#cover {
+  background: rgba(0,0,0,.35);
+}
+/*.main-container {
+  max-width: none !important;
+}*/
+.main-container > .row {
+  /*height: 100vh;*/
+  padding-bottom: 52px;
+}
+@media (min-width: 768px) {
+  .main-container > .row {
+    height: 100vh;
+  }
+}
+.title-img,
+.kindle-example {
+  display: inline-block;
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+}
+.kindle-example {
+  max-width: 350px;
+}
+.coming-soon {
+  color: #FFF;
+  font-family: 'Lato', sans-serif;
+  /*text-transform: uppercase;*/
+  margin: 20px 0 0 0;
+  font-size: 36px;
+  letter-spacing: 3px;
+  line-height: 1.2;
+}
+.coming-soon {
+  margin-top: 3px;
+}
+.coming-soon:before {
+content: '';
+    display: block;
+    height: 1px;
+    width: 220px;
+    background: #FFF;
+    margin: 28px auto 12px;
+}
+/*h1 {
+  color: #ffeb7e;
+}
+.title-ls {
+  text-align: center;
+  line-height: 1;
+  font-family: 'Times New Roman', Times, serif;
+  font-style: italic;
+  font-weight: 500;
+  display: relative;
+  transform: rotate(-11.25deg);
+  font-size: 73px;
+  text-shadow: 3px 3px 0 #000;
+  margin-top: -52px;
+}
+.title-ls:after {
+  content: ':';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.title-li {
+  font-family: 'Lato', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  line-height: 1;
+  font-size: 100px;
+  text-align: center;
+ /* margin-top: 52px;*/
+  text-shadow: 4px 4px 0 #000;
+}
+.title-li span {
+  font-size: 132px;
+}*/
+
+@media only screen and (max-width: 670px) {
+    .title-ls,
+    .title-li {
+      text-shadow: 2px 2px 0 #000;
+    }
+    .title-ls {
+      font-size: 54.75px;
+    }
+    .title-li span {
+      font-size: 101px;
+    }
+    .title-li {
+      font-size: 75px;
+    }
+}
+
+.btn-primary.btn-amazon {
+  color: #FFF !important;
+  background: #ff9900;
+  border-color: #c17400;
+  font-size: 28px;
+  padding: 12px 25px;
+  font-family: 'Lato', sans-serif;
+  letter-spacing: 2px;
+}
+.btn-primary.btn-amazon:hover {
+  background: #c17400;
+}

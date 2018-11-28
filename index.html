@@ -212,27 +212,16 @@ $(document).on('click', '#menu-button', function(e){
   e.preventDefault();
 
   if($('html').hasClass('nav-activated')){
-//alert('it is active');
-
-var scrollTop = parseInt($('html').css('top'));
-$('html').removeClass('nav-activated');
-$('html,body').scrollTop(-scrollTop);
-
-
-// $('html').removeClass('nav-activated');
-$('#shade').fadeOut();
+    var scrollTop = parseInt($('html').css('top'));
+    $('html').removeClass('nav-activated');
+    $('html,body').scrollTop(-scrollTop);
+    $('#shade').fadeOut();
+    $('#menu-button p').text('Menu');
 } else {
-
-
-//if ($(document).height() > $(window).height()) {
-var scrollTop = ($('html').scrollTop()) ? $('html').scrollTop() : $('body').scrollTop(); // Works for Chrome, Firefox, IE...
-$('html').addClass('nav-activated').css('top',-scrollTop);         
-//}
-
-
-//alert('it is not active');
-// $('html').addClass('nav-activated');
-$('#shade').fadeIn();
+  var scrollTop = ($('html').scrollTop()) ? $('html').scrollTop() : $('body').scrollTop();
+  $('html').addClass('nav-activated').css('top',-scrollTop);
+  $('#shade').fadeIn();
+  $('#menu-button p').text('Back');
 }
 
 // $('body').toggleClass('nav-activated');

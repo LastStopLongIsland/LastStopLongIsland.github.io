@@ -131,8 +131,19 @@ z-index: 999;
 transform: translateX(-100%);
 transition: transform .375s ease;
 }
+
+@media (max-width: 600px) {
+
+  #nav {
+    top: 62px;
+    height: calc(100% - 62px);
+  }
+
+}
+
+
 #nav > .d-flex {
-  height: 100vh;
+  height: 100%;
   max-height: 100vh;
 }
 #nav ul {

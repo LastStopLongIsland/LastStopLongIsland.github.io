@@ -472,7 +472,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 }
 @media (max-width: 480px) {
   .kindle-example {
-    max-width: 360px;
+    max-width: 340px;
   }
 }
 .coming-soon {

@@ -290,9 +290,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
   width: 100%;
   height: auto;
   max-width: 180px;
+  transition: transform .25s ease, filter .25s ease;
 }
 .amazon-link:hover {
   cursor: pointer;
+  box-shadow: 0 0 40px rgba(0,0,0,.2);
+  transform: translateY(-4px);
+  filter: brightness(1.1);
 }
 
 #nav-button {
@@ -466,6 +470,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
   /*height: calc(100vh - 120px);
   width: auto;*/
 }
+@media (max-width: 480px) {
+  .kindle-example {
+    max-width: 370px;
+  }
+}
 .coming-soon {
   color: #FFF;
   font-weight: 600;
@@ -528,7 +537,7 @@ h2 {
 #author p,
 #newsletter p {
   opacity: .95;
-  letter-spacing: .5px;
+  letter-spacing: .25px;
   font-size: 18px;
   line-height: 1.45;
 }

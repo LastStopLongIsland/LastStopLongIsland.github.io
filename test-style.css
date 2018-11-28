@@ -240,7 +240,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
     top: 21px !important;
   }
   #nav ul {
-    width: calc(100% - 134px);
+    /*width: calc(100% - 134px);*/
+    width: 100%;
   }
   #nav li a > div > div {
     font-size: 23px;

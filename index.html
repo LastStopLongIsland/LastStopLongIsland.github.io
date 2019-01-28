@@ -41,9 +41,9 @@
 
 <body>
 
-<script>
+<!-- <script>
   fbq('track', 'ViewContent');
-</script>
+</script> -->
 
   <div id="nav-mobile-backdrop">
     <!-- <div style="pointer-events: none;">&nbsp;</div> -->
@@ -321,9 +321,9 @@ if(scroll > os + ht){
 }
 });
 
-// $('#checkOutButton').click(function(){
-//   fbq('track', 'InitiateCheckout');
-// });
+$('#checkOutButton').click(function(){
+  fbq('track', 'InitiateCheckout');
+});
 
 
 });

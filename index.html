@@ -38,6 +38,11 @@
 <!-- End Facebook Pixel Code -->
 
 
+<script>
+  fbq('track', 'ViewContent');
+</script>
+
+
   
 </head>
 
@@ -319,9 +324,9 @@ if(scroll > os + ht){
 }
 });
 
-$('#checkOutButton').click(function(){
-  fbq('track', 'InitiateCheckout');
-});
+// $('#checkOutButton').click(function(){
+//   fbq('track', 'InitiateCheckout');
+// });
 
 
 });

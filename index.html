@@ -85,7 +85,7 @@
         <!-- <img class="title-img" src="img/title-img.png" data-aos="fade-in" data-aos-duration="650"> -->
 <!-- <p class="coming-soon" data-aos="fade-up" data-aos-duration="650" data-aos-delay="600">Purchase the Book Today!</p>
   <p data-aos="fade-up" data-aos-duration="650" data-aos-delay="900"><a class="btn btn-primary btn-amazon mt-4" href="http://a.co/d/e8XCdDu" target="_blank">Buy Now</a></p> -->
-  <p class="text-center mb-4 mb-lg-0 btn-amazon" data-aos="fade-up" data-aos-duration="650" data-aos-delay="600"><a href="http://a.co/d/e8XCdDu" target="_blank"><img class="amazon-link" src="img/amazon-link.png"></a></p>
+  <p class="text-center mb-4 mb-lg-0 btn-amazon" data-aos="fade-up" data-aos-duration="650" data-aos-delay="600"><a id="checkOutButton" href="http://a.co/d/e8XCdDu" target="_blank"><img class="amazon-link" src="img/amazon-link.png"></a></p>
 </div>
 <!-- <div class="col-12 col-md mt-4 mt-md-0 mb-4 mb-md-0 text-center">
 <img class="kindle-example" src="img/kindle-example.png" data-aos="fade-left" data-aos-duration="650" data-aos-delay="300">
@@ -317,6 +317,10 @@ if(scroll > os + ht){
 } else {
   $('body').removeClass('small-amazon-enabled');
 }
+});
+
+$('#$checkOutButton').click(function(){
+  fbq('track', 'InitiateCheckout');
 });
 
 
